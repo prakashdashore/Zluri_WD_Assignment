@@ -1,0 +1,135 @@
+#container{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    background-color: #d9e2f4;
+}
+.left{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    /* background-color: red; */
+}
+.right .img-wrepper{
+    border:  10px solid #fff;
+    border-radius: 10px;
+    position: relative;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+
+   
+
+}
+
+.right .img-wrepper img{
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
+}
+
+.wrepper{
+    font-family: Lexend Medium;
+    width: 200px;
+    min-height: 300px;
+    /* background: red; */
+    
+}
+
+
+.top{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: snow;
+}
+
+.bottum{
+    font-size: 1rem;
+    font-weight: 200;
+
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: calc(100% - 30px);
+    background-color: snow;
+    border-radius: 10px;
+}
+
+.items{
+    border-radius: 10px;
+   
+    width: 100%;
+    padding: 5px 10px;
+}
+.items:hover{
+    background-color: rgb(200, 200, 230);
+
+}
+
+
+
+@media (max-width: 500px) {
+    #container{
+        position: relative;
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #d9e2f4;
+    }
+    .right .img-wrepper{
+        border:  10px solid #fff;
+        border-radius: 10px;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        /* background: #000; */
+        overflow: hidden;
+    
+       
+    
+    }
+    .left{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .right{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height: 70%;
+        /* background-color: red; */
+    }
+
+    
+
+
+  }
